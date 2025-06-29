@@ -486,7 +486,6 @@ footer {
     }
 
     .method-content {
-        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
@@ -564,16 +563,22 @@ footer {
 }
 
 .method-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     align-items: center;
+}
+
+.method-text {
+    width: 100%;
+    max-width: 800px;
 }
 
 .method-text h3 {
     color: var(--dark-blue);
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .method-text p {
@@ -613,11 +618,12 @@ footer {
 
 .method-image {
     width: 100%;
+    max-width: 600px;
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    animation: fadeInRight 1s ease;
+    animation: fadeInUp 1s ease;
 }
 
 .image-placeholder {
