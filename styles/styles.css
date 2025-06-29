@@ -546,6 +546,96 @@ footer {
     }
 }
 
+/* Media query específica para pantallas con relación de aspecto 20:9 (como Xiaomi Poco X3 Pro) */
+@media (max-width: 1080px) and (min-aspect-ratio: 2/1) {
+    .method-content {
+        gap: 2.5rem;
+    }
+
+    .method-text {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .method-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .method-image {
+        height: 320px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .method-benefits {
+        padding: 1.5rem;
+    }
+}
+
+/* Media query para pantallas muy anchas y altas (como el Poco X3 Pro en modo portrait) */
+@media (max-width: 1080px) and (min-height: 2000px) {
+    .method-content {
+        gap: 3rem;
+    }
+
+    .method-text {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .method-image {
+        height: 380px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* Media query específica para pantallas con resolución 1080x2400 (Poco X3 Pro) */
+@media (max-width: 1080px) and (min-height: 2400px) {
+    .method-content {
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .method-text {
+        max-width: 100%;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .method-text h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .method-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .method-image {
+        height: 350px;
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .method-benefits {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .method-benefits h4 {
+        font-size: 1.2rem;
+    }
+
+    .method-benefits li {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
