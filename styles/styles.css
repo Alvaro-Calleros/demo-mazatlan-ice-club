@@ -487,6 +487,11 @@ footer {
 
     .method-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .method-image {
+        height: 350px;
     }
 
     .instructors-grid {
@@ -508,7 +513,7 @@ footer {
 
 @media (max-width: 480px) {
     .method-image {
-        height: 250px;
+        height: 280px;
     }
 
     .method-text h3 {
@@ -525,6 +530,20 @@ footer {
 
     .method-benefits li {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .method-image {
+        height: 250px;
+    }
+
+    .method-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .method-benefits {
+        padding: 0.8rem;
     }
 }
 
