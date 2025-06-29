@@ -506,6 +506,28 @@ footer {
     }
 }
 
+@media (max-width: 480px) {
+    .method-image {
+        height: 250px;
+    }
+
+    .method-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .method-benefits {
+        padding: 1rem;
+    }
+
+    .method-benefits h4 {
+        font-size: 1.1rem;
+    }
+
+    .method-benefits li {
+        font-size: 0.9rem;
+    }
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -572,10 +594,11 @@ footer {
 
 .method-image {
     width: 100%;
-    height: 600px;
+    height: 400px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    animation: fadeInRight 1s ease;
 }
 
 .image-placeholder {
